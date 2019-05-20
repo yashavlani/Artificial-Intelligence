@@ -1,0 +1,9 @@
+NAME:YASH AVLANI
+UTA ID:1001670008
+
+Eval function explanation:
+
+The eval function tries to find the optimal path using minmax algorithm so as to make player 1(max) win the game.
+It calculates scores as the (score of Player 1- Score of player 2) corresponding to player 1.
+
+Score:it is any possible consective 4 moves of same player on game board either horizontally, vertically or along the two main diagonals.

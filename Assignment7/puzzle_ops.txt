@@ -1,0 +1,13 @@
+
+(operator
+ MoveFromOneToOne
+
+(params
+  (<a> Tile) (<y> Position) (<z> Position) )
+ 
+(preconds
+  (on <a> <y>) (clear <z>) (neighbour <y> <z>))
+ 
+(effects
+  (on <a> <z>) (clear <y>) (del on <a> <y>) (del clear <z>)) )
+

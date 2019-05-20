@@ -1,0 +1,59 @@
+
+(operator
+ moveFromPegToDisk
+ 
+(params
+  (<a> Disk) (<y> Peg) (<b> Disk))
+ 
+(preconds
+  (on <a> <y>) (clear <a>) (clear <b>) (bigger <b> <a>))
+ 
+(effects
+  (on <a> <b>) (clear <y>) 
+(del on <a> <y>) (del clear <b>)) )
+
+
+
+(operator
+ moveFromPegToPeg
+ 
+(params
+  (<a> Disk) (<y> Peg) (<z> Peg))
+
+(preconds
+  (clear <a>) (on <a> <y>) (clear <z>))
+ 
+(effects
+  (on <a> <z>) (clear <y>) 
+(del on <a> <y>) (del clear <z>)) )
+
+
+
+(operator
+ moveFromDiskToDisk
+ 
+(params
+  (<a> Disk) (<b> Disk) (<c> Disk))
+
+(preconds
+  (on <a> <b>) (clear <a>) (clear <c>) (bigger <c> <a>))
+ 
+(effects
+  (on <a> <c>) (clear <b>) 
+(del on <a> <b>) (del clear <c>)) )
+
+
+
+
+(operator
+ moveFromDiskToPeg
+ 
+(params
+  (<a> Disk) (<b> Disk) (<z> Peg))
+ 
+(preconds
+  (on <a> <b>) (clear <a>) (clear <z>))
+
+(effects
+  (on <a> <z>) (clear <b>) 
+(del on <a> <b>) (del clear <z>)) )

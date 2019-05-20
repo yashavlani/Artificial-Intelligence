@@ -1,0 +1,16 @@
+Execution Time
+
+depth_limit	run_time(user)
+2		0m0.087s
+3		0m0.089s
+4		0m0.086s
+5		0m0.121s
+6		0m0.191s
+7		0m0.219s
+8		0m0.301s
+9		0m0.346s
+10		0m0.694s
+11		0m2.330s
+12		0m6.372s
+13		0m23.442s
+14		1m23.717s

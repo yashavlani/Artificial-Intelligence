@@ -1,0 +1,43 @@
+(tile_1 Tile)
+
+(tile_2 Tile)
+
+(tile_3 Tile)
+
+(tile_4 Tile)
+
+(tile_5 Tile)
+
+(tile_6 Tile)
+
+(tile_7 Tile)
+
+(pos_1 Position)
+
+(pos_2 Position)
+
+(pos_3 Position)
+
+(pos_4 Position)
+
+(pos_5 Position)
+
+(pos_6 Position)
+
+(pos_7 Position)
+
+(pos_8 Position)
+
+(pos_9 Position)
+
+
+(preconds
+ (neighbour pos_1 pos_2) (neighbour pos_1 pos_4) (neighbour pos_2 pos_1) (neighbour pos_2 pos_3) (neighbour pos_2 pos_5) (neighbour pos_3 pos_2) (neighbour pos_3 pos_6)
+ (neighbour pos_4 pos_1) (neighbour pos_4 pos_5) (neighbour pos_4 pos_7) (neighbour pos_5 pos_2) (neighbour pos_5 pos_4) (neighbour pos_5 pos_6) (neighbour pos_5 pos_8) (neighbour pos_6 pos_3) (neighbour pos_6 pos_5) (neighbour pos_6 pos_9)
+ (neighbour pos_7 pos_4) (neighbour pos_7 pos_8) (neighbour pos_8 pos_5) (neighbour pos_8 pos_7) (neighbour pos_8 pos_9) (neighbour pos_9 pos_6) (neighbour pos_9 pos_8)
+ (on tile_1 pos_1) (on tile_2 pos_2) (on tile_3 pos_3) (clear pos_4) (on tile_5 pos_5) (on tile_6 pos_6) (on tile_4 pos_7) (clear pos_8) (on tile_7 pos_9))
+
+
+
+(effects
+  (on tile_1 pos_1) (on tile_2 pos_2) (on tile_3 pos_3) (on tile_4 pos_4) (on tile_5 pos_5) (on tile_6 pos_6) (on tile_7 pos_7) (clear pos_8) (clear pos_9) )

@@ -1,0 +1,26 @@
+(A Peg)
+
+(B Peg)
+
+(C Peg)
+(disk1 Disk)
+
+(disk2 Disk)
+
+(disk3 Disk)
+
+(disk4 Disk)
+
+(disk5 Disk)
+
+
+
+
+(preconds
+  (bigger disk2 disk1) (bigger disk3 disk1) (bigger disk4 disk1) (bigger disk5 disk1) (bigger disk3 disk2) (bigger disk4 disk2) (bigger disk5 disk2) (bigger disk4 disk3) (bigger disk5 disk3) (bigger disk5 disk4)
+(on disk1 disk2) (on disk2 A) (clear disk1) (clear B) (clear C))
+
+
+
+(effects
+ (on disk1 B) (on disk2 C))
